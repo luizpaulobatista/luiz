@@ -7,10 +7,10 @@
       <div class="modal-body">
         <form id="id_modal_delete_solicitacao">
              <input type="hidden" name="id_solicitacao" id="id_solicitacao"/>
-            <h3>Confirma deletar essa Solicitação ?</h3>
+            <h3>Deseja realmente deletar esta Solicitação ?</h3>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-lg btn-block" data-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top:0px">Salvar</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block" data-dismiss="modal">Não</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top:0px">Sim</button>
             </div>
         </form>
       </div>
