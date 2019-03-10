@@ -2,6 +2,8 @@
 $(document).ready(function(){
   $('#celular_cliente').mask('(99)99999-9999');
   $('#cep').mask('999999-999');
+  $('#preload').css('display', 'none');  
+  $('#id_cidade').append("<option value='0'>Selecione...</option>");
 });
 
 // GET_CIDADES
@@ -172,6 +174,7 @@ $('#id_form_solicitacao').on('submit',function(){
         $('#preload').css('display', 'none');
         mensagens_resposta(response);
         $('#id_form_solicitacao')[0].reset();
+        $('#id_cidade').append("<option value='0'>Selecione...</option>");
       }
       else {
         $('#preload').css('display', 'none');
@@ -219,7 +222,12 @@ function popula_cliente(codigo)
        $('#numero').val(Dados_JSON.numero);
        $('#bairro').val(Dados_JSON.bairro);
        $('#id_estado').val(Dados_JSON.id_estado);
-       $('#id_cidade').html('<option value="'+ Dados_JSON.id_cidade +'">'+Dados_JSON.nome_cidade+'</option>');
+       
+       if(Dados_JSON.id_cidade.length == ''){
+        $('#id_cidade').append("<option value='0'>Selecione...</option>");
+       }else {
+         $('#id_cidade').html('<option value="'+ Dados_JSON.id_cidade +'">'+Dados_JSON.nome_cidade+'</option>');
+       }
        $('#cep').val(Dados_JSON.cep);
        $('#id_setor').val(Dados_JSON.id_setor);
        $('#id_curso').val(Dados_JSON.id_curso);
@@ -228,7 +236,8 @@ function popula_cliente(codigo)
         
       } 
       else {
-        mensagens_resposta(response);
+        $('#preload').css('display', 'none');  
+        $('#id_cidade').append("<option value='0'>Selecione...</option>");
       }
     },
     error:function () {
