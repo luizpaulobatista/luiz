@@ -8,7 +8,6 @@
    padding-left:200px;
    padding-top:30px;
  }
-}
   </style>
     <div id="preload" style="display:none">
     <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
@@ -192,13 +191,14 @@
           </div>
         </div>
     </div>  
-<!--include footer -->
-<?php include('../includes/footer.php'); ?>
 
 <?php include('./include/modal_setor.php') ?>
 
 <?php include('./include/modal_curso.php') ?>
 
+
+<!--include footer -->
+<?php include('../includes/footer.php'); ?>
 
 <!--SCRIPTS DA PAGINA -->
 <script src="<?php echo $app['default']?>home/scripts/home.js"></script>
