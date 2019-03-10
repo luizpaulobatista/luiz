@@ -164,9 +164,19 @@ $('#id_form_solicitacao').on('submit',function(){
     data: $('#id_form_solicitacao').serialize(),
     success: function (response)
     {
-      $('#preload').css('display', 'none');
-      mensagens_resposta(response);
-      $('#id_form_solicitacao')[0].reset();
+
+      var JSONArray = $.parseJSON(response);
+
+      if (JSONArray['result'] == 'success') {
+        
+        $('#preload').css('display', 'none');
+        mensagens_resposta(response);
+        $('#id_form_solicitacao')[0].reset();
+      }
+      else {
+        $('#preload').css('display', 'none');
+        mensagens_resposta(response);
+      }
 
     },
     error:function() 
