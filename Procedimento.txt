@@ -1,17 +1,18 @@
-Projeto Crud de um sistema de Gest„o de solicitaÁıes 
+Projeto Crud de um sistema de Gest√£o de solicita√ß√µes 
 
-Desenvolvimento de um simples projeto de um cadastro e gest„o de solicitaÁıes ao Setor de TI em que utilizando o acesso a banco de dados com o MySQL e linguagem PHP.
+Desenvolvimento de um simples projeto de um cadastro e gest√£o de solicita√ß√µes ao Setor de TI em que utilizando o acesso a banco de dados com o MySQL e linguagem PHP.
 
 Assuntos Abordados no Desenvolvimento do Projeto:
 
 Acesso a banco de dados com o MySql
 
-OtimizaÁ„o da conex„o com o banco de dados atravÈs do PDO (PHP Data Object)
+Otimiza√ß√£o da conex√£o com o banco de dados atrav√©s do PDO (PHP Data Object)
 Uso de linguagens, como: JavaScript e CSS
-Uso do framework Bootstrap para realizaÁ„o de um layout responsivo para o projeto.
-ConfiguraÁ„o do Projeto:
+Uso do framework Bootstrap para realiza√ß√£o de um layout responsivo para o projeto.
+Configura√ß√£o do Projeto:
 - Executar o banco.sql ou importar o arquivo.
 - Usar um servidor local de sua preferencia.
+- crie uma database chamada crud e rode o scrip do banco
 
 Banco:
 usuario: root,
